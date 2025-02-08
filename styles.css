@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.content img {
+    width: 100%;
+    display: block;
+    margin-bottom: 0;
+    cursor: default;
+}
+
+#imagemFixa {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ou uma largura específica, ex: width: 300px; */
+    z-index: 100; /* Garante que a imagem fique sobre outros elementos */
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .content {
+        padding: 0;
+    }
+
+    .content img {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    #imagemFixa {
+        width: 100%; /* Ajuste a largura para dispositivos móveis, se necessário */
+    }
+}
